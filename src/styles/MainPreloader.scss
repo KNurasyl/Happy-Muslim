@@ -1,0 +1,109 @@
+@import "_mixin";
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 #018074;
+    }
+    5% {
+        transform: scale(1.01);
+    }
+    15% {
+        transform: scale(1);
+    }
+    70% {
+        box-shadow: 0 0 0 50px rgba(168, 63, 57, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 100px rgba(168, 63, 57, 0);
+    }
+}
+
+@keyframes preloaderEnter {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@keyframes promoExit {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+.MainPreloader {
+    position: relative;
+
+    & .Preloader {
+        position: absolute;
+        height: 100vh;
+        width: 100vw;
+        background-color: #FFF;
+        @include flex_dir_align_justify(column, center, center);
+
+        & img:first-child {
+            position: relative;
+            z-index: 2;
+            height: 150px;
+            width: 150px;
+            animation: pulse 2s infinite;
+            border-radius: 50%;
+        }
+
+        & img:last-child {
+            position: absolute;
+            z-index: 1;
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    & .close {
+        animation: preloaderEnter 1s forwards;
+    }
+
+    & .Promo {
+        height: 100vh;
+        width: 100vw;
+        @include flex_dir_align_justify(column, center, space-evenly);
+
+        & .promo_img {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+        }
+
+        & .text_block {
+            text-align: center;
+            margin-top: -50px;
+
+            & h1 {
+                @include size_weight_height_color(22px, 700, normal, #FFF);
+            }
+
+            & p {
+                @include size_weight_height_color(15px, 500, normal, #FFF);
+            }
+        }
+
+        & button {
+            @include size_weight_height_color(16px, 700, normal, green);
+            background-color: #c2fbd7;
+            border-radius: 100px;
+            box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+            display: inline-block;
+            text-align: center;
+            transition: all 250ms;
+            border: 0;
+            height: 50px;
+            width: 200px;
+        }
+    }
+}

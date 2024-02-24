@@ -1,0 +1,128 @@
+@import "_mixin";
+
+.Main {
+    & .Promo {
+        padding: 30px 5px;
+
+        & .Card {
+            position: relative;
+            height: 140px;
+            background: #dcc0a7;
+            border-radius: 15px;
+            padding: 10px 25px;
+            @include flex_dir_align_justify(row, center, space-between);
+
+            & .text {
+                width: 60%;
+                @include flex_dir_align_justify(column, flex-start, space-evenly);
+
+                & h3 {
+                    @include size_weight_height_color(12px, 500, normal, #1A1A1A); 
+                }
+
+                & p {
+                    @include size_weight_height_color(14px, 700, normal, #1A1A1A);
+                }
+            }
+
+            & .btn {
+                position: relative;
+                z-index: 2;
+                margin-top: 40px;
+                height: 35px;
+                width: 90px;
+                border-radius: 10px;
+                border: none;
+                background-color: #232732;
+                @include size_weight_height_color(14px, 500, normal, #FFFFFF);
+            }
+        }
+
+        & .Card::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: -2px;
+            background-image: url("../media/tasbih.png");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            z-index: 1;
+            height: 150px;
+            width: 150px;
+        }
+    }
+    
+    & .Content {
+        padding: 0 5px;
+        position: absolute;
+        height: 420px;
+        bottom: 8%;
+        right: 0;
+        left: 0;
+
+        & .projects {
+            height: 220px;
+            margin-top: 15px;
+            flex-wrap: wrap;
+            @include flex_dir_align_justify(column, center, space-evenly);
+
+            & .project {
+                height: 90px;
+                width: 90px;
+                border-radius: 50%;
+                box-shadow: 0px 0px 5px gray;
+                @include flex_dir_align_justify(column, center, space-evenly);
+
+                & img {
+                    height: 100%;
+                    width: 100%;
+                    border-radius: 50%;
+                }
+
+                & p {
+                    @include size_weight_height_color(12px, 500, normal, #1A1A1A);
+                }
+            }
+        }
+
+        & .pray_time {
+            padding: 5px;
+            height: 140px;
+            border-radius: 10px;
+            border: 1px solid #5D8082;
+            @include flex_dir_align_justify(column, center, space-evenly);
+
+            & .location {
+                padding: 5px 0px;
+                width: 170px;
+                background-color: #5D8082;
+                border-radius: 5px;
+                @include flex_dir_align_justify(row, center, center);
+
+                & span {
+                    @include size_weight_height_color(14px, 500, normal, #FFFFFF);
+                }
+            }
+
+            & .time_block {
+                width: 100%;
+                @include flex_dir_align_justify(row, center, space-between);
+
+                & .item {
+                    width: 18%;
+                    border-radius: 5px;
+                    background: #5D8082;
+                    @include flex_dir_align_justify(column, center, space-between);
+
+                    & .time {
+                        @include size_weight_height_color(11px, 500, normal, #FFFFFF);
+                    }
+
+                    & .name {
+                        @include size_weight_height_color(12px, 500, normal, #FFFFFF);
+                    }
+                }
+            }
+        }
+    }
+}
