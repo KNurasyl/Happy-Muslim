@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/Happy-Muslim/static/css/main.21131758.css",
+    "main.js": "/Happy-Muslim/static/js/main.a8193d46.js",
+    "static/js/453.83b4869a.chunk.js": "/Happy-Muslim/static/js/453.83b4869a.chunk.js",
+    "static/media/main_promo.jpg": "/Happy-Muslim/static/media/main_promo.476e21efb3070124759a.jpg",
+    "static/media/menu_icon.jpg": "/Happy-Muslim/static/media/menu_icon.9beb446da4e10c2a8fe8.jpg",
+    "static/media/muminat.png": "/Happy-Muslim/static/media/muminat.fdcb89328ac82001178b.png",
+    "static/media/muslim_house.png": "/Happy-Muslim/static/media/muslim_house.0b4d51e740ac9b07fa3c.png",
+    "static/media/splash.png": "/Happy-Muslim/static/media/splash.cda01ccd99be947be3c1.png",
+    "static/media/nisa.png": "/Happy-Muslim/static/media/nisa.86013c4c4cabd4098fe9.png",
+    "static/media/bunayya.png": "/Happy-Muslim/static/media/bunayya.f0590bda6d9501149f79.png",
+    "static/media/inFaq.png": "/Happy-Muslim/static/media/inFaq.926bf5657d1cb1c911f5.png",
+    "static/media/bissmilah.png": "/Happy-Muslim/static/media/bissmilah.86c7c97088dabac088fb.png",
+    "static/media/IlimBagy.png": "/Happy-Muslim/static/media/IlimBagy.5df56dff00496e31becf.png",
+    "index.html": "/Happy-Muslim/index.html",
+    "main.21131758.css.map": "/Happy-Muslim/static/css/main.21131758.css.map",
+    "main.a8193d46.js.map": "/Happy-Muslim/static/js/main.a8193d46.js.map",
+    "453.83b4869a.chunk.js.map": "/Happy-Muslim/static/js/453.83b4869a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.21131758.css",
+    "static/js/main.a8193d46.js"
+  ]
+}
