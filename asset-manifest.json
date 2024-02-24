@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Happy-Muslim/static/css/main.21131758.css",
-    "main.js": "/Happy-Muslim/static/js/main.a8193d46.js",
+    "main.js": "/Happy-Muslim/static/js/main.008cb9cd.js",
     "static/js/453.83b4869a.chunk.js": "/Happy-Muslim/static/js/453.83b4869a.chunk.js",
     "static/media/main_promo.jpg": "/Happy-Muslim/static/media/main_promo.476e21efb3070124759a.jpg",
     "static/media/menu_icon.jpg": "/Happy-Muslim/static/media/menu_icon.9beb446da4e10c2a8fe8.jpg",
@@ -15,11 +15,11 @@
     "static/media/IlimBagy.png": "/Happy-Muslim/static/media/IlimBagy.5df56dff00496e31becf.png",
     "index.html": "/Happy-Muslim/index.html",
     "main.21131758.css.map": "/Happy-Muslim/static/css/main.21131758.css.map",
-    "main.a8193d46.js.map": "/Happy-Muslim/static/js/main.a8193d46.js.map",
+    "main.008cb9cd.js.map": "/Happy-Muslim/static/js/main.008cb9cd.js.map",
     "453.83b4869a.chunk.js.map": "/Happy-Muslim/static/js/453.83b4869a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.21131758.css",
-    "static/js/main.a8193d46.js"
+    "static/js/main.008cb9cd.js"
   ]
 }
