@@ -9,7 +9,7 @@ export const WorkSpace = () => {
         <Routes>
             <Route path={"/Happy-Muslim/*"}>
                 <Route index element={<MainPreloader/>}/>
-                <Route path="main" element={<Main/>}/>
+                <Route path="/main" element={<Main/>}/>
             </Route>
         </Routes>
     );
