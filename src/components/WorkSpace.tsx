@@ -7,10 +7,8 @@ import { MainPreloader } from './Shared/Preloader/MainPreloader';
 export const WorkSpace = () => {
     return (
         <Routes>
-            <Route path={"/Happy-Muslim/*"}>
-                <Route index element={<MainPreloader/>}/>
-                <Route path="/main" element={<Main/>}/>
-            </Route>
+            <Route path={"/Happy-Muslim"} element={<MainPreloader/>}/>
+            <Route path="main" element={<Main/>}/>
         </Routes>
     );
 };
